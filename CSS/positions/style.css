@@ -1,0 +1,31 @@
+.container{
+    background:gray;
+    width: 700px;
+    height: 500px;
+}
+.d
+{
+    width:100px;
+    height: 100px;
+}
+.one{
+    background: red;
+    position: static;
+    border: 3px solid #73AD21;
+    
+}
+.two
+{
+    position: fixed;
+    /* left: 30px; */
+    top: 216px;
+    border: 3px solid #73AD21;
+    background: yellow;
+}
+.three
+{
+    position: sticky;
+  top: 100px;
+  background-color: green;
+  /* border: 2px solid #4CAF50; */
+}
