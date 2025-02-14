@@ -1,0 +1,16 @@
+body{
+    background-image: url("");
+    background-position: right;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background: url() no-repeat center;
+height:100vh;
+filter:blur(10px)
+
+}
+/* gradient   grabient.com or webgradients.com
+*/
+body{
+    background-image: linear-gradient(to bottom, rgba) url()
+
+}
