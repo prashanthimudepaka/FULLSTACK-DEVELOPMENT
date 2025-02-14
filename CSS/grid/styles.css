@@ -1,0 +1,86 @@
+/* Apply a universal reset to remove default margins & paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define the grid container */
+.container {
+    display: grid; /* Enables CSS Grid */
+    
+    /* Define a 3-row layout with fixed, flexible, and footer heights */
+    grid-template-rows: 80px auto 60px;
+
+    /* Define a 2-column layout: Sidebar takes 250px, rest takes available space */
+    grid-template-columns: 250px auto;
+
+    /* Define layout areas for easier placement */
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+
+    /* Set height to cover full viewport */
+    height: 100vh;
+
+    /* Set gap between elements */
+    gap: 10px;
+}
+
+/* Header Styling */
+.header {
+    grid-area: header; /* Assigns to the header grid area */
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    grid-area: sidebar; /* Assigns to the sidebar grid area */
+    background-color: #343A40;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+/* Main Content Styling */
+.main-content {
+    grid-area: main; /* Assigns to the main content grid area */
+    background-color: #E9ECEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+/* Footer Styling */
+.footer {
+    grid-area: footer; /* Assigns to the footer grid area */
+    background-color: #6C757D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        /* Change to a single-column layout on smaller screens */
+        grid-template-columns: 1fr; 
+        grid-template-rows: 80px auto auto 60px; /* Sidebar & Main as separate rows */
+        grid-template-areas: 
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+    }
+}

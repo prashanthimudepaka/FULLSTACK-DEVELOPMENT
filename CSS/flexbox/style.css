@@ -24,7 +24,6 @@ flex-wrap: wrap;
 /* use flex wrap to make everything in container */
 /* align-content: stretch; default*/
 align-content: center;
-flex-grow: 10;
 
 }
 .container .child

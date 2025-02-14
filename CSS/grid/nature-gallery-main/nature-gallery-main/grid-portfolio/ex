@@ -1,0 +1,25 @@
+.waterfalls{
+    /* grid-area: 3/3/4; */
+    grid-row: span 2;
+    /* grid-column: span ; */
+    grid-template-areas: span 1,span  2 ;
+}
+.night{
+    grid-row: span 2;
+}
+.extra{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.evg{
+    /* grid-area: 3/3/4; */
+    /* grid-row: span 3;
+    grid-column-end: 2;
+     */
+}
+.sunset{
+    grid-row: span 3;
+}
+.beach{
+    grid-area:1/4/1/2;
+}
