@@ -133,6 +133,7 @@ console.log(jsonobject)
 const date=new Date()
 // console.log(currentDate)
 const year=date.getFullYear()
+
 const month=date.getMonth()
 // const minutes=date.
 console.log(date.toDateString())
