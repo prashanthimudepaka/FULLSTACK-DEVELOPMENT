@@ -1,0 +1,63 @@
+JavaScript Timers: setInterval(), setTimeout(), and clearTimeout()/clearInterval()
+JavaScript provides built-in timers for executing functions after a delay or at intervals.
+The three main functions are:
+
+1️⃣ setTimeout() – Executes once after a delay.
+2️⃣ setInterval() – Executes repeatedly at fixed intervals.
+3️⃣ clearTimeout() / clearInterval() – Stops a timeout or interval.
+
+
+setTimeout(function, delay);
+
+setTimeout(() => {
+    alert("Hello after 3 seconds!");
+}, 3000);
+
+2️⃣ setInterval() – Execute Repeatedly at Intervals
+
+setInterval(function, delay);
+
+function showTime() {
+    let now = new Date();
+    console.log(now.toLocaleTimeString());
+}
+
+setInterval(showTime, 1000); // Runs every 1 second
+
+3️⃣ clearTimeout() – Stop setTimeout()
+
+let timeoutID = setTimeout(() => {
+    console.log("This will not be executed!");
+}, 5000);
+
+clearTimeout(timeoutID); // Cancels the timeout
+
+4️⃣ clearInterval() – Stop setInterval()
+
+let count = 10;
+let timer = setInterval(() => {
+    console.log(count);
+    count--;
+
+    if (count < 0) {
+        clearInterval(timer); // Stops the interval
+        console.log("Countdown Complete!");
+    }
+}, 1000);
+
+
+✔️ setTimeout()
+
+Show a popup after some time.
+Delay form validation messages.
+Redirect users after a few seconds.
+✔️ setInterval()
+
+Digital Clock updates every second.
+Live notifications on a webpage.
+Auto-refresh data in dashboards.
+✔️ clearTimeout() / clearInterval()
+
+Stop a loading animation after completion.
+Cancel a pending request if no response.
+Stop background updates when not needed.
