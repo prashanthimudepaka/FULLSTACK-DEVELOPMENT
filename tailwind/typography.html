@@ -6,6 +6,23 @@
    
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Josefin Sans', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                        'mono': ['Roboto Mono', 'monospace'],
+                        'cursive': ['Dancing Script', 'cursive'],
+                        'fancy': ['Pacifico', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
 
 </head>
 <body class="m-4">
@@ -40,12 +57,183 @@ You can also use variant modifiers to target media queries like responsive break
 
 
     <h2>font family</h2>
-    <div class="container bg-lime-100 p-10 mb-10">
+    <<div class="m-5">
         <p class="font-sans">font sans</p>
-        <p class="font-serif">font sans</p>
-        <p class="font-">font sans</p>
+        <p class="font-serif">font serif</p>
+        <p class="font-mono">font mono</p>
+        <p class="font-cursive">font cursive</p>
+        <p class="font-fancy">font fancy</p>
+
+        <p class="italic">italic</p>
+        <p class="not-italic">not italic</p>
+
+        <p class="font-thin">font thin</p>
+        <p class="font-extralight">font extralight</p>
+        <p class="font-light">font light</p>
+        <p class="font-normal">font normal</p>
+        <p class="font-medium">font medium</p>
+        <p class="font-semibold">font semibold</p>
+        <p class="font-bold">font bold</p>
+        <p class="font-extrabold">font extrabold</p>
+        <p class="font-black">font black</p>
+
+        <p class="text-sm">text sm</p>
+        <p class="text-base">text base</p>
+        <p class="text-lg">text lg</p>
+        <p class="text-xl">text xl</p>
+        <p class="text-2xl">text 2xl</p>
+        <p class="text-3xl">text 3xl</p>
+        <p class="text-4xl">text 4xl</p>
+        <p class="text-5xl">text 5xl</p>
+        <p class="text-6xl">text 6xl</p>
+        <p class="text-7xl">text 7xl</p>
+        <p class="text-8xl">text 8xl</p>
+        <p class="text-9xl">text 9xl</p>
+    </div>
         <p class=""></p>
     </div>
+    <div class="container bg-orange-200 ">
+        <p class="font-light text-6xl m-4 underline">font weight</p>
+    </div>
+    <div class="container bg-orange-200 p-10 mb-10">
+        <p class="font-thin">Font weight: Thin (100)</p>
+        <p class="font-extralight">Font weight: Extra Light (200)</p>
+        <p class="font-light">Font weight: Light (300)</p>
+        <p class="font-normal">Font weight: Normal (400)</p>
+        <p class="font-medium">Font weight: Medium (500)</p>
+        <p class="font-semibold">Font weight: Semibold (600)</p>
+        <p class="font-bold">Font weight: Bold (700)</p>
+        <p class="font-extrabold">Font weight: Extra Bold (800)</p>
+        <p class="font-black">Font weight: Black (900)</p>
+
+        <h1 class="text-6xl m-4 underline">letter spacing</h1>
+        <p class="tracking-tighter">Letter Spacing: Tighter (-0.05em)</p>
+        <p class="tracking-tight">Letter Spacing: Tight (-0.025em)</p>
+        <p class="tracking-normal">Letter Spacing: Normal (0em)</p>
+        <p class="tracking-wide">Letter Spacing: Wide (0.025em)</p>
+        <p class="tracking-wider">Letter Spacing: Wider (0.05em)</p>
+        <p class="tracking-widest">Letter Spacing: Widest (0.1em)</p>
+    </div>
+<h1 class="text-6xl m-4 underline">text alignment</h1>
+    <!-- Text Alignment Examples -->
+    <div class="space-y-8 p-8">
+        <!-- Left Alignment (Default) -->
+        <div class="bg-gray-100 p-4">
+            <p class="text-left">
+                This text is left-aligned (default). Left alignment is natural for most western languages and is typically the default text alignment.
+            </p>
+        </div>
+
+        <!-- Center Alignment -->
+        <div class="bg-gray-100 p-4">
+            <p class="text-center">
+                This text is center-aligned. Center alignment works well for headings, quotes, or creating symmetrical layouts.
+            </p>
+        </div>
+
+        <!-- Right Alignment -->
+        <div class="bg-gray-100 p-4">
+            <p class="text-right">
+                This text is right-aligned. Right alignment can be useful for numerical data in tables or RTL languages.
+            </p>
+        </div>
+
+        <!-- Justified Text -->
+        <div class="bg-gray-100 p-4">
+            <p class="text-justify">
+                This text is justified. Justified text creates clean edges on both sides but can create awkward spacing between words. It's commonly used in print media like newspapers and magazines. Use with caution on the web as it may affect readability.
+            </p>
+        </div>
+    </div>
+
+    <div class="container mx-auto p-8">
+        <!-- Basic text decorations -->
+        <div class="space-y-4">
+            <p class="underline">This text is underlined</p>
+            <p class="overline">This text has an overline</p>
+            <p class="line-through">This text has a strikethrough</p>
+            <p class="no-underline">This text has no decoration</p>
+        </div>
+
+        <!-- Decoration styles -->
+        <div class="space-y-4 mt-8">
+            <p class="underline decoration-solid">Solid underline</p>
+            <p class="underline decoration-double">Double underline</p>
+            <p class="underline decoration-dotted">Dotted underline</p>
+            <p class="underline decoration-dashed">Dashed underline</p>
+            <p class="underline decoration-wavy">Wavy underline</p>
+        </div>
+
+        <!-- Decoration colors -->
+        <div class="space-y-4 mt-8">
+            <p class="underline decoration-red-500">Red underline</p>
+            <p class="underline decoration-blue-500">Blue underline</p>
+            <p class="underline decoration-green-500">Green underline</p>
+        </div>
+
+        <!-- Decoration thickness -->
+        <div class="space-y-4 mt-8">
+            <p class="underline decoration-1">Thin underline</p>
+            <p class="underline decoration-2">Medium underline</p>
+            <p class="underline decoration-4">Thick underline</p>
+            <p class="underline decoration-8">Extra thick underline</p>
+        </div>
+    </div>
+    
+    <!-- Text Transform Examples -->
+    <div class="p-5 space-y-4">
+        <!-- Uppercase -->
+        <div>
+            <p class="uppercase text-lg">This text will be uppercase</p>
+        </div>
+
+        <!-- Lowercase -->
+        <div>
+            <p class="lowercase text-lg">THIS TEXT WILL BE LOWERCASE</p>
+        </div>
+
+        <!-- Capitalize -->
+        <div>
+            <p class="capitalize text-lg">this first letter of each word will be capital</p>
+        </div>
+
+        <!-- Normal Case -->
+        <div>
+            <p class="normal-case text-lg">Text remains in its Original Case</p>
+        </div>
+
+        <!-- Combined with other text styles -->
+        <div>
+            <p class="uppercase font-bold text-blue-600">Bold uppercase colored text</p>
+            <p class="capitalize italic text-green-600">Italic capitalized colored text</p>
+        </div>
+    </div>
+   
+            <h1>decoration offset</h1>
+            <div class="p-5 space-y-4">
+                <!-- Basic underline with offset -->
+                <div>
+                    <p class="underline decoration-2 decoration-offset-2">Underline with 2px offset</p>
+                </div>
+        
+                <!-- Different offset sizes -->
+                <div>
+                    <p class="underline decoration-4 decoration-offset-4">Larger offset and thicker line</p>
+                    <p class="underline decoration-1 decoration-offset-1">Small offset and thin line</p>
+                </div>
+        
+                <!-- Combining with colors -->
+                <div>
+                    <p class="underline decoration-blue-500 decoration-2 decoration-offset-2">Colored offset underline</p>
+                    <p class="underline decoration-red-500 decoration-4 decoration-offset-4">Red offset decoration</p>
+                </div>
+        
+                <!-- With different text styles -->
+                <div>
+                    <p class="underline decoration-purple-500 decoration-2 decoration-offset-2 font-bold">Bold text with offset decoration</p>
+                    <p class="underline decoration-green-500 decoration-2 decoration-offset-2 italic">Italic text with offset decoration</p>
+                </div>
+            </div>
 <!--  -->
 </body>
 </html>

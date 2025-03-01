@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h2 class="text-2xl font-bold mb-4">Fixed Widths</h2>
+    <!-- Fixed widths -->
+    <div class="w-0 bg-blue-500 mb-4">w-0 (width: 0px)</div>
+    <div class="w-1 bg-blue-500 mb-4">w-1 (width: 0.25rem / 4px)</div>
+    <div class="w-12 bg-blue-500 mb-4">w-12 (width: 3rem / 48px)</div>
+    <div class="w-96 bg-blue-500 mb-4">w-96 (width: 24rem / 384px)</div>
+
+    <h2 class="text-2xl font-bold mt-8 mb-4">Percentage Widths</h2>
+    <!-- Percentage widths -->
+    <div class="w-1/2 bg-green-500 mb-4">w-1/2 (width: 50%)</div>
+    <div class="w-1/3 bg-green-500 mb-4">w-1/3 (width: 33.333333%)</div>
+    <div class="w-2/3 bg-green-500 mb-4">w-2/3 (width: 66.666667%)</div>
+    <div class="w-full bg-green-500 mb-4">w-full (width: 100%)</div>
+
+    <h2 class="text-2xl font-bold mt-8 mb-4">Max Width Examples</h2>
+    <!-- Max width examples -->
+    <div class="max-w-xs bg-red-500 mb-4">max-w-xs (max-width: 20rem / 320px)</div>
+    <div class="max-w-sm bg-red-500 mb-4">max-w-sm (max-width: 24rem / 384px)</div>
+    <div class="max-w-md bg-red-500 mb-4">max-w-md (max-width: 28rem / 448px)</div>
+    <div class="max-w-lg bg-red-500 mb-4">max-w-lg (max-width: 32rem / 512px)</div>
+
+    <h2 class="text-2xl font-bold mt-8 mb-4">Viewport Width</h2>
+    <!-- Viewport width -->
+    <div class="w-screen bg-yellow-500 mb-4">w-screen (width: 100vw)</div>
+    <div class="w-[50vw] bg-yellow-500 mb-4">w-[50vw] (width: 50vw)</div>
+
+    <h2 class="text-2xl font-bold mt-8 mb-4">Arbitrary Values</h2>
+    <!-- Arbitrary values -->
+    <div class="w-[200px] bg-purple-500 mb-4">w-[200px] (width: 200px)</div>
+    <div class="w-[75%] bg-purple-500 mb-4">w-[75%] (width: 75%)</div>
+    <div class="w-[20rem] bg-purple-500 mb-4">w-[20rem] (width: 20rem)</div>
+
+    <h2 class="text-2xl font-bold mt-8 mb-4">Min Width Examples</h2>
+    <!-- Min width examples -->
+    <div class="min-w-min bg-orange-500 mb-4">min-w-min (min-width: min-content)</div>
+    <div class="min-w-max bg-orange-500 mb-4">min-w-max (min-width: max-content)</div>
+    <div class="min-w-full bg-orange-500 mb-4">min-w-full (min-width: 100%)</div>
+
+    <style>
+        /* Adding some text and padding for better visibility */
+        div {
+            padding: 10px;
+            color: white;
+            margin: 5px;
+        }
+    </style>
+</body>
+</html>
