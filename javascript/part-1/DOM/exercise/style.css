@@ -1,0 +1,20 @@
+*{
+    margin:0;
+}
+body{
+    background: #000;
+    color: white;
+}
+.box{
+    max-width: 600px;
+    margin: 20px;
+    border:1px solid purple;
+    padding: 20px;
+
+}
+.first{
+    color: rgba(173,23,0,863);
+}
+.second{
+    color:yellow;
+}
