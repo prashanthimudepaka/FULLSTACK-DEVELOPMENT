@@ -1,0 +1,18 @@
+rmdir /s /q node_modules (if exists)
+del package.json (if exists)
+del package-lock.json (if exists)
+npm init -y
+npm install -D tailwindcss@2.2.19 postcss@8.3.11 autoprefixer@10.3.7
+npx tailwindcss init
+ package.josn in script{}:
+ "build": "tailwindcss -i ./input.css -o ./dist/output.css --watch"
+
+to run:
+npm run build
+
+
+new version node 20:
+
+npm init
+npm install -D tailwindcss
+npx tailwindcss init
